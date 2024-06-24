@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,53 @@
 </head>
 <body>
     <h1>Image Slider Demo</h1>
+    <div class="custom_component" id="slider_component"></div>
+    <script src="slider.js" defer></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel Demo</title>
+    <style>
+        #slider_component {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        #slider_component img {
+            width: 100%;
+            display: block;
+        }
+        #slider_component button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #slider_component button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        #slider_component button.prev {
+            left: 10px;
+        }
+        #slider_component button.next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Carousel Demo</h1>
     <div class="custom_component" id="slider_component"></div>
     <script src="slider.js" defer></script>
 </body>
