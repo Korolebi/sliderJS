@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const images = [
-        '\SliderJS\images\cat.jpg',
-        '\SliderJS\images\mouse.jpg',
-        '\SliderJS\images\sejong.jpg'
+        '/images/cat.jpg',
+        '/images/mouse.jpg',
+        '/images/sejong.jpg'
     ];
     const intervalTime = 3000; // 3 seconds
     let currentIndex = 0;
