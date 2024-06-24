@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider Script</title>
+    <title>Image Slider Demo</title>
+    <style>
+        #slider_component {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        #slider_component img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Image Slider Script</h1>
-    <p>This page is hosting the image slider script.</p>
+    <h1>Image Slider Demo</h1>
+    <div class="custom_component" id="slider_component"></div>
+    <script src="slider.js" defer></script>
 </body>
 </html>
